@@ -1,0 +1,17 @@
+wrote dockerfiles for rtmp and node auth 
+wrote nginx to act as a proxy in between.(also as a gateway)
+
+we created a rtmp (real time messaging protocol) server using nginx.
+we use OBS software to stream video cam and send the stream to our rtmp server.
+we also added authentication node server in is configured in nginx file.
+
+
+
+this rtmp server url: rtmp://localhost:1935/live/amogh
+we can use VLC to stream.
+
+
+To Run:
+docker-compose build
+docker-compose run
+

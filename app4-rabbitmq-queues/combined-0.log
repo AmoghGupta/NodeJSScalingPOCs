@@ -1,0 +1,21 @@
+Express server is running on port 3000
+Producer: 12
+For: 12 From Consumer worker: 233
+Producer: 50
+For: 50 From Consumer worker: 20365011074
+For: 11 From Consumer worker: 144
+Error: write EPIPE
+    at afterWriteDispatched (internal/stream_base_commons.js:150:25)
+    at writeGeneric (internal/stream_base_commons.js:141:3)
+    at Socket._writeGeneric (net.js:770:11)
+    at Socket._write (net.js:782:8)
+    at doWrite (_stream_writable.js:431:12)
+    at writeOrBuffer (_stream_writable.js:415:5)
+    at Socket.Writable.write (_stream_writable.js:305:11)
+    at roundrobin (/Users/agupta/Desktop/NodeJSApp/app4-rabbitmq/node_modules/amqplib/lib/mux.js:61:25)
+    at Mux._readIncoming (/Users/agupta/Desktop/NodeJSApp/app4-rabbitmq/node_modules/amqplib/lib/mux.js:67:3)
+    at Immediate.<anonymous> (/Users/agupta/Desktop/NodeJSApp/app4-rabbitmq/node_modules/amqplib/lib/mux.js:97:12)
+    at processImmediate (internal/timers.js:439:21)
+Express server is running on port 3000
+Express server is running on port 3000
+Producer: 11

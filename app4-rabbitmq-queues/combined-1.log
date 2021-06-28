@@ -1,0 +1,8 @@
+Express server is running on port 3000
+Producer: 43
+For: 43 From Consumer worker: 701408733
+Producer: 12
+For: 12 From Consumer worker: 233
+Producer: 11
+Express server is running on port 3000
+For: 11 From Consumer worker: 144

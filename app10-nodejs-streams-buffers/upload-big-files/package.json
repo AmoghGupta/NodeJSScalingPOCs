@@ -1,0 +1,16 @@
+{
+  "name": "upload-big-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "upload-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "busboy": "^0.3.1",
+    "connect-busboy": "0.0.2",
+    "fs-extra": "^10.0.0"
+  }
+}
