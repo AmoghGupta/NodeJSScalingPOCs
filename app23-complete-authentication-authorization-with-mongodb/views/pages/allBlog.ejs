@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+  <h2><%= header %></h2>
+
+  <ul>
+    <% results.forEach(function(result) { %>
+      <li>
+        Title: <%= result.title %> ||  Body: <%= result.body %>
+      </li>
+    <% }); %>
+  </ul>
+
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

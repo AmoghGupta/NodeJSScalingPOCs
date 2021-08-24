@@ -1,0 +1,11 @@
+<div>I am using AWS CI/CD</div>
+<div>Made some updates to project.</div>
+
+<div>Deploying new code 2</div>
+
+<p>courses</p>
+<ul *ngIf="courses$ | async as courses">
+  <li *ngFor="let course of courses">
+      {{course.description}}
+  </li>
+</ul>
