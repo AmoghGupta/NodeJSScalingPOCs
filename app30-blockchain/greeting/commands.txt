@@ -1,0 +1,10 @@
+this creates a contract==>
+truffle create contract Greeting
+
+
+this compiles a contract==>
+truffle compile
+
+this deploys a contract==>
+truffle migrate
+

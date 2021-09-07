@@ -1,0 +1,19 @@
+{
+  "name": "app28-websockets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mongoose": "^6.0.2",
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.1.3"
+  }
+}
