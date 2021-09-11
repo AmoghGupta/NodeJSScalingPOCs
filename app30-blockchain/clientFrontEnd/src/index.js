@@ -21,7 +21,9 @@ const updateGreeting = (greeting, contract, accounts) => {
 
 async function greetingApp() {
     const web3 = await getWeb3();
+    //get the ethereum accounts
     const accounts = await web3.eth.getAccounts();
+    // get the smart contract using the smart contract ABI and smart contract address
     const contract = await getContract(web3);
     let greeting;
 

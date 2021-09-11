@@ -18,13 +18,11 @@ const getWeb3 = () => {
   };
 
   const getContract = async (web3) => {
-    const data = await $.getJSON("./contracts/Greeting.json");
-    const netId = await web3.eth.net.getId();
-    const deployedNetwork = data.networks[netId];
+    const data = await $.getJSON("./contracts/MemeOfTheDay.json");
     //The ABI is the description of the contract interface. 
     const greeting = new web3.eth.Contract(
       data.abi,
-      deployedNetwork && deployedNetwork.address
+      "0xAdBa8665529Fa62703FDb0b82B99a184006Ab665"
     );
     return greeting;
 };

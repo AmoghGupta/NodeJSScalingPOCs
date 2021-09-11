@@ -20,8 +20,9 @@ app.get('/addfile', function(req, res) {
           console.log(err);
           res.status(503);
         }
-        // console.log(file);
+        console.log(file);
         return res.json({
+          file,
           "uploaded":"ok"
         });
       })
