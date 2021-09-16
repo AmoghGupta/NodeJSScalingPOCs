@@ -8,7 +8,7 @@ const app = express();
 const ipfs = ipfsAPI('ipfs.infura.io', '5001', {protocol: 'https'})
 
 //Reading file from computer
-let testFile = fs.readFileSync(__dirname+"/test.html");
+let testFile = fs.readFileSync(__dirname+"/bitcoinmagic.gif");
 //Creating buffer for ipfs function to add file to the system
 let testBuffer = new Buffer(testFile);
 

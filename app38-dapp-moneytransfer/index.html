@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAPP- WalletInfo</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="utils.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div class="container">
+    <h3 style="text-align: center;">Welcome to Ether Transfer App!</h3>
+    <div style="text-align: center;">
+        <span>Smart Contract Owner Address: </span><span id="smartcontractaddress"></span>
+    </div>
+    <div class="row" style="margin-top:6rem;">
+        
+        <div class="col-sm-5" style="border: 1px solid lightgrey">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="usr">Enter a valid receipient ethereum address:</label>
+                        <input type="text" class="form-control" id="receipientaddress">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="usr">Enter the amount to send to receipients ethereum address:</label>
+                        <input type="text" class="form-control" id="receipientamount">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5>My Balance:</h5>
+                    <span id="mybalance"></span>
+                </div>
+                <div class="col-sm-12">
+                    <h5>My Address:</h5>
+                    <span id="myaddress"></span>
+
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col-sm-2">
+            <div class="row" style="margin-top: 20%;">
+                <div class="col-sm-offset-4" style="margin-top: 3%;">
+                    <button type="button" class="btn btn-primary" onclick="transferMoney()">Transfer</button>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="col-sm-5" style="border: 1px solid lightgrey">
+            <h5>Details of the receipient addresss</h5>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <form class="form-inline">
+                            <label>Address:</label>
+                            <span id="receipientaddress1"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <form class="form-inline">
+                            <label>Balance:</label>
+                            <span id="receipientbalance1"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-5" style="margin-top: 4rem;">
+            <button type="button" class="btn btn-success" id="loginbutton" onclick="login()">Connect me to ETADApp</button>
+        </div>
+    </div>
+  
+</div>
+    
+</body>
+</html>
