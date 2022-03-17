@@ -1,0 +1,16 @@
+{
+  "name": "app39-build-own-cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "add": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.3.1"
+  }
+}

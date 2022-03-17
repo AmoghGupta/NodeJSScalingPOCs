@@ -1,0 +1,9 @@
+https://dev.to/rushankhan1/build-a-cli-with-node-js-4jbi
+
+
+
+
+publish the node package globally on local system
+sudo npm install -g .
+then you can run your command:
+add 2 3
