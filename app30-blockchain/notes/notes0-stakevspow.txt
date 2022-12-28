@@ -1,0 +1,46 @@
+PROOF OF WORK vs PROOF OF STAKE
+
+In a blockchain, transactions are stored in blocks.
+
+After every few seconds/minutes, a new block is generated to store the next group of transactions, and so on.
+
+Each block of transactions needs to be validated before it can be appended on the blockchain.
+
+And there should be a reward system for the validator so that people are willing to do so.
+
+Because of the reward, there are multiple validators competing/cooperating to do so.
+
+Hence, a consensus mechanism is required.
+
+There are two popular consensus mechanisms :
+
+1) Proof of Work (PoW)
+2) Proof of Stake (PoS)
+
+In Proof of Work, there are multiple validators (called 'miners') who compete for validating the next block.
+
+In order to determine who gets to validate the next block, they have to solve a complex puzzle (related to the block's data) that requires large computing power.
+
+Whoever solves it first, gets to validate the block and keep the block reward and fee in the form of cryptocurrency. This process is called mining.
+
+eg: Bitcoin, Ethereum (currently), Litecoin use PoW.
+
+The downside is that the entire process consumes a lot of electricity due to the computing power required by the miners to solve the puzzle.
+
+As per some estimates, 1 Bitcoin transaction consumes the energy equivalent of approx 53 days of power for the average US household. Ofcourse this can vary due to certain factors, but it's huge.
+
+Proof of Stake, on the other hand, doesn't require mining or solving a puzzle.
+
+For a PoS chain, multiple validators 'stake' certain amount of cryptocurrency i.e. lock some cryptocurrency on chain.
+
+For validating a block, the system chooses someone from the people who've staked certain amount of cryptocurrency.
+
+The more cryptocurrency you've staked, the better your chances of being chosen.
+
+If chosen, you get to validate the block and keep the transaction fee for the block's transactions.
+
+Since, there's no competition for solving a complex puzzle, the huge computing power isn't required. Hence, PoS is much less energy-intensive as compared to PoW.
+
+eg: Ethereum 2.0, Solana, Cardano use PoS.
+
+This makes PoS relatively greener and cheaper as compared to PoW.

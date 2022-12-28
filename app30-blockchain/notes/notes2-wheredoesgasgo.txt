@@ -1,0 +1,62 @@
+WHERE DOES THE ETHEREUM GAS FEE GO?
+
+Is it burnt?
+
+Or is it given to the miner?
+
+Actually, it's both, after the EIP-1559 (an upgrade).
+
+Total gas fee is made up of :
+
+BASE FEE (fixed for every transaction of a block) - which gets burnt entirely
+
+MAX PRIORITY FEE (decided by the user) - which goes to the miner partially or entirely depending on the 'MAX TOTAL FEE' 
+which is again decided by the user.
+****************************************************************************************************************************************
+
+TOTAL GAS FEE = BASE FEE + MAX PRIORITY FEE
+
+TOTAL GAS FEE <= MAX TOTAL FEE Or
+TOTAL GAS FEE >= MAX TOTAL FEE 
+
+****************************************************************************************************************************************
+Example :
+
+Let's suppose a user wants to pay the Max Total Fee of 100 Gwei* per gas unit consumed for the transaction. It's inclusive of the Base Fee (burnt) and Max Priority Fee (for miner).
+
+While making the transaction, the user doesn't know what the exact Base Fee will be for the transaction/block.
+
+In order to prioritise his transaction, he also needs to pay some fee to the block miner i.e. Max Priority Fee. Suppose the user want it be 30 Gwei per gas unit.
+
+Hence, the user enters the values of 100 Gwei and 30 Gwei respectively.
+
+
+When the block is confirmed, there are 2 possibilities depending on what is the final value of Base Fee:
+****************************************************************************************************************************************
+Case 1 : Base Fee + Max Priority Fee <= Max Total Fee
+
+eg:
+Base Fee = 60,
+Max Priority Fee = 30,
+Max Total Fee = 100
+
+Hence,
+60 Gwei is burnt, (per gas unit)
+30 Gwei goes to the miner, (per gas unit)
+rest 10 Gwei are refunded to the user (per gas unit)
+****************************************************************************************************************************************
+Case 2 : Base Fee + Max Priority Fee > Max Total Fee
+
+eg:
+Base Fee = 80,
+Max Priority Fee = 30,
+Max Total Fee = 100
+
+Hence,
+80 Gwei is burnt, (per gas unit)
+Only 20 Gwei goes to the miner (per gas unit), since Max Total Fee is 100 Gwei
+0 refund for the user since the max limit is consumed.
+
+Note: Base Fee can't be >= Max Total Fee. Your Metamask wallet will let you know if the Max Total Fee entered by you is not sufficient as per the network conditions.
+****************************************************************************************************************************************
+*Gwei is a billionth part of an Ether.

@@ -1,0 +1,37 @@
+HOW IS GAS FEE CALCULATED?
+
+Making transactions on Ethereum or any other blockchain costs gas fee. Total gas fee consists of two parts:
+***************************************************
+GAS FEES = GAS UNITS * GAS PRICE
+****************************************************************************************************************************************
+GAS UNITS : Gas units is a number that depends on the amount of computation required for a transaction.
+
+eg: If you send some Ether (Ethereum's native cryptocurrency) to someone, it requires 21,000 gas units. It's the minimum number of units required for any transaction.
+
+Number of required gas units increases as the complexity of transaction increases.
+
+eg: Sending an ERC-20 token might cost around 60,000 gas units. Minting an NFT might cost around 120,000 gas units, and so on.
+
+It all depends on how many computations need to be made while processing the transaction.
+****************************************************************************************************************************************
+GAS PRICE : Gas price is determined by the demand for making transactions. The more the traffic, the higher the price.
+
+It's usually expressed in Gwei which is a billionth part of an Ether.
+****************************************************************************************************************************************
+If the gas price is 100 Gwei, it means 1 gas unit currently costs 100 Gwei as per the demand. The gas price may vary throughout the day depending on the total traffic.
+
+Let's combine these two now. If you need to send some Ether to someone at a time when gas price for 1 gas unit is 100 Gwei, you'll have to pay a total of:
+
+21,000 gas units x 100 Gwei = 2,100,000 Gwei
+
+Since Gwei is 1/1bn of Ether, you'll pay 0.0021 Ether.
+
+To find the amount in dollars, multiply it with the price of ether i.e. 1200 USD.
+
+Hence 0.0021 Ether x 1200 USD = 2.52 USD total gas fee
+
+In short, the gas fee depends on :
+
+1) Complexity of transaction (gas unit)
+2) Demand for making transactions (gas price)
+3) Price of Ether (to calculate dollar value)
